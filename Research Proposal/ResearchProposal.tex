@@ -3,24 +3,27 @@
 	\title{HERE Technologies Research Proposal}
 	\author{Reinhold Ludwig, Xinming Huang, Anurag Desai}
 	\maketitle
+	
 	\begin{abstract}
-		
+		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this paper we would like to propose an innovative system that would create a dense geometric mapping algorithm for identifying and mapping static digital markers like Traffic Signal Posts, Speed Limit Signs. Our system would also be able to classify static and dynamic obstacles, and remove dynamic obstacles from the map.
 	\end{abstract}
+	
 	\section{Introduction}
+	Autonomous vehicles require more information that the standard 2D map provides. It needs to understand when and where to look for traffic signals, speed limits. Even to perform a simple task like taking a turn, the autonomous vehicle requires information like where the turn only lane starts which isn't provided in standard maps. Hence we need maps that have more data that simple latitude and longitudinal data.
 	
-	Need of 3D Mapping in Self Driving 
+	Perception and navigation in complex environment requires a well defined map of the environment. LiDAR is usually used to generate a map of the environment using the 3D point cloud data. Camera's do not directly provide a depth perception but can be extremely efficient in image classification and obstacle detection.
 	
-	How Self driving requires more data than just the data provided by GNSS
+	\underline{\textit{	How Self driving requires more data than just the data provided by GNSS}}
 	
 	\section{Literature Review}
 
 	Different Mapping Techniques:
 	
-	1. Visual Mapping
+	1. Visual Mapping - S Thrun Reference
 	
-	2. Lidar Mapping
-	
-	Use of HDFS for data association of Lat Long with Digital Markers
+	2. Lidar Mapping - A Geiger Reference
+		
+	Open Drive Standard
 	
 	\section{Research Methodology}
 	Developing a system comprising of 2 parts:
@@ -29,10 +32,16 @@
 	
 	Online Platform: for putting together the data recorded and generating a map of it
 	
+	ResNet Style Architecture - Use of Residual Values 
+	
 	\section{Conclusion}
 	
-	\section{Citations}
-	Real-Time Dense Mapping for Self Driving Vehicles using Fish Eye - September 17 2018
+	\section{References}
+	\textbf{Enumerated List}
+	\begin{enumerate}
+		\item Real-Time Dense Mapping for Self Driving Vehicles using Fish Eye - September 17 2018
 	
-	Real-time Dynamic Object Detection for Autonomous Driving using Prior 3D Map - September 28 2018
+		\item Real-time Dynamic Object Detection for Autonomous Driving using Prior 3D Map - September 28 2018
+			
+	\end{enumerate}
 \end{document}
