@@ -1,32 +1,63 @@
 \documentclass{article}
+
+\usepackage{comment}
+
+
+\title{HERE Technologies Research Proposal}
+\author{Reinhold Ludwig, Xinming Huang, Anurag Desai}
+
 \begin{document}
-	\title{HERE Technologies Research Proposal}
-	\author{Reinhold Ludwig, Xinming Huang, Anurag Desai}
+	\pagenumbering{gobble}
 	\maketitle
-	
+	\newpage
+	\pagenumbering{arabic}
+		
 	\begin{abstract}
-		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this paper we would like to propose an innovative system that would create a dense geometric mapping algorithm for identifying and mapping static digital markers like Traffic Signal Posts, Speed Limit Signs. Our system would also be able to classify static and dynamic obstacles, and remove dynamic obstacles from the map.
+		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this paper we would like to propose an innovative system that would create a dense geometric mapping algorithm for identifying and mapping static digital markers like Traffic Signal Posts, Speed Limit Signs. Our system would also be able to classify static and dynamic obstacles, and remove dynamic obstacles from the map. 
 	\end{abstract}
 	
 	\section{Introduction}
-	Autonomous vehicles require more information that the standard 2D map provides. It needs to understand when and where to look for traffic signals, speed limits. Even to perform a simple task like taking a turn, the autonomous vehicle requires information like where the turn only lane starts which isn't provided in standard maps. Hence we need maps that have more data that simple latitude and longitudinal data.
+	\paragraph{}
+	Autonomous vehicles have the potential to revolutionize the transportation industry by drastically improving safety and efficiency of transportation. 
 	
-	Perception and navigation in complex environment requires a well defined map of the environment. LiDAR is usually used to generate a map of the environment using the 3D point cloud data. Camera's do not directly provide a depth perception but can be extremely efficient in image classification and obstacle detection.
+	Primarily Used Sensors: LiDAR, Camera, IMU, GNSS, 
 	
-	\underline{\textit{	How Self driving requires more data than just the data provided by GNSS}}
+	The level of autonomy in Autonomous Driving Systems is determined by its ability to perceive and navigate in complex environments. To accomplish this task the system needs to sense and generate an accurate map of the environment, find its location in the map and navigate to the destination. Several approaches have been proposed 
+	\cite{Thrun_Montemerlo_2006} 
+	\cite{Durrant-Whyte_Bailey}
+	,
+	however the most successful one
+	\cite{Levinson_Montemerlo_Thrun_2007}
 	
-	\section{Literature Review}
 
-	Different Mapping Techniques:
+	\begin{comment}
+	Autonomous vehicles require more information that the standard 2D map provides. It needs to understand when and where to look for traffic signals, speed limits. Even to perform a simple task like taking a turn, the autonomous vehicle requires information like where the turn only lane starts which isn't provided in standard maps. Hence we need maps that have more data that simple latitude and longitudinal data.
+	Perception and navigation in complex environment requires a well defined map of the environment. LiDAR is usually used to generate a map of the environment using the 3D point cloud data. Camera's do not directly provide a depth perception but can be extremely efficient in image classification and obstacle detection.
+	\end{comment}
 	
-	1. Visual Mapping - S Thrun Reference
+	\underline{\textit{How Self driving requires more data than just the data provided by GNSS}}
 	
-	2. Lidar Mapping - A Geiger Reference
-		
-	Open Drive Standard
+	\section{Related Work}
+	\paragraph{}
+	Different Mapping Techniques have been deployed for generating
 	
-	\section{Research Methodology}
-	Developing a system comprising of 2 parts:
+	1. Visual Mapping - S Thrun Reference \cite{Levinson_Montemerlo_Thrun_2007}
+	
+	2. Lidar Mapping - A Geiger Reference 
+	
+	Different ways the work load is offloaded:
+	
+	1. Online Method: Markov Assumption - Forget all prior data
+	
+	2. Offline Method: GraphSLAM, EKF-SLAM, UKF-SLAM, ISPKF-SLAM
+	
+	\section{Proposed Mapping Technique}
+	
+	We propose a 2-part system which comprises of
+	
+	Focus on Prior Maps usage
+	
+	\underline{\textit{Add references for integrating different dimensions}}
 	
 	On-Vehicle: for Data Recording
 	
@@ -36,12 +67,8 @@
 	
 	\section{Conclusion}
 	
-	\section{References}
-	\textbf{Enumerated List}
-	\begin{enumerate}
-		\item Real-Time Dense Mapping for Self Driving Vehicles using Fish Eye - September 17 2018
 	
-		\item Real-time Dynamic Object Detection for Autonomous Driving using Prior 3D Map - September 28 2018
-			
-	\end{enumerate}
+	
+\bibliography{ResearchProposal}
+\bibliographystyle{IEEEtran}
 \end{document}
