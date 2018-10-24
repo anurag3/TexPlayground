@@ -1,16 +1,262 @@
- @article{Barsan_Liu_Pollefeys_Geiger, title={Robust Dense Mapping for Large-Scale Dynamic Environments}, abstractNote={We present a stereo-based dense mapping algorithm for large-scale dynamic urban environments. In contrast to other existing methods, we simultaneously reconstruct the static background, the moving objects, and the potentially moving but currently stationary objects separately, which is desirable for high-level mobile robotic tasks such as path planning in crowded environments. We use both instance-aware semantic segmentation and sparse scene ﬂow to classify objects as either background, moving, or potentially moving, thereby ensuring that the system is able to model objects with the potential to transition from static to dynamic, such as parked cars. Given camera poses estimated from visual odometry, both the background and the (potentially) moving objects are reconstructed separately by fusing the depth maps computed from the stereo input. In addition to visual odometry, sparse scene ﬂow is also used to estimate the 3D motions of the detected moving objects, in order to reconstruct them accurately. A map pruning technique is further developed to improve reconstruction accuracy and reduce memory consumption, leading to increased scalability. We evaluate our system thoroughly on the well-known KITTI dataset. Our system is capable of running on a PC at approximately 2.5Hz, with the primary bottleneck being the instance-aware semantic segmentation, which is a limitation we hope to address in future work. The source code is available from the project websitea.}, author={Barsan, Ioan Andrei and Liu, Peidong and Pollefeys, Marc and Geiger, Andreas}, pages={8} }
- @article{Cui_Heng_Yeo_Geiger_Pollefeys_Sattler_2018, title={Real-Time Dense Mapping for Self-driving Vehicles using Fisheye Cameras}, url={http://arxiv.org/abs/1809.06132}, abstractNote={We present a real-time dense geometric mapping algorithm for large-scale environments. Unlike existing methods which use pinhole cameras, our implementation is based on ﬁsheye cameras whose large ﬁeld of view beneﬁts various computer vision applications for self-driving vehicles such as visual-inertial odometry, visual localization, and object detection. Our algorithm runs on in-vehicle PCs at approximately 15 Hz, enabling vision-only 3D scene perception for self-driving vehicles. For each synchronized set of images captured by multiple cameras, we ﬁrst compute a depth map for a reference camera using plane-sweeping stereo. To maintain both accuracy and efﬁciency, while accounting for the fact that ﬁsheye images have a lower geometric resolution, we recover the depths using multiple image resolutions. We adopt the fast object detection framework, YOLOv3, to remove potentially dynamic objects. At the end of the pipeline, we fuse the ﬁsheye depth images into the truncated signed distance function (TSDF) volume to obtain a 3D map. We evaluate our method on large-scale urban datasets, and results show that our method works well in complex environments.}, note={arXiv: 1809.06132}, journal={arXiv:1809.06132 [cs]}, author={Cui, Zhaopeng and Heng, Lionel and Yeo, Ye Chuan and Geiger, Andreas and Pollefeys, Marc and Sattler, Torsten}, year={2018}, month={Sep} }
- @article{Durrant-Whyte_Bailey, title={Simultaneous Localisation and Mapping (SLAM): Part I The Essential Algorithms}, abstractNote={This tutorial provides an introduction to Simultaneous Localisation and Mapping (SLAM) and the extensive research on SLAM that has been undertaken over the past decade. SLAM is the process by which a mobile robot can build a map of an environment and at the same time use this map to compute it’s own location. The past decade has seen rapid and exciting progress in solving the SLAM problem together with many compelling implementations of SLAM methods. Part I of this tutorial (this paper), describes the probabilistic form of the SLAM problem, essential solution methods and signiﬁcant implementations. Part II of this tutorial will be concerned with recent advances in computational methods and new formulations of the SLAM problem for large scale and complex environments.}, author={Durrant-Whyte, Hugh and Bailey, Tim}, pages={9} }
- @inproceedings{Geiger_Ziegler_Stiller_2011, place={Baden-Baden, Germany}, title={StereoScan: Dense 3d reconstruction in real-time}, ISBN={978-1-4577-0890-9}, url={http://ieeexplore.ieee.org/document/5940405/}, DOI={10.1109/IVS.2011.5940405}, booktitle={2011 IEEE Intelligent Vehicles Symposium (IV)}, publisher={IEEE}, author={Geiger, Andreas and Ziegler, Julius and Stiller, Christoph}, year={2011}, month={Jun}, pages={963–968} }
- @inproceedings{Hane_Sattler_Pollefeys_2015, place={Hamburg, Germany}, title={Obstacle detection for self-driving cars using only monocular cameras and wheel odometry}, ISBN={978-1-4799-9994-1}, url={http://ieeexplore.ieee.org/document/7354095/}, DOI={10.1109/IROS.2015.7354095}, abstractNote={Mapping the environment is crucial to enable path planning and obstacle avoidance for self-driving vehicles and other robots. In this paper, we concentrate on ground-based vehicles and present an approach which extracts static obstacles from depth maps computed out of multiple consecutive images. In contrast to existing approaches, our system does not require accurate visual inertial odometry estimation but solely relies on the readily available wheel odometry. To handle the resulting higher pose uncertainty, our system fuses obstacle detections over time and between cameras to estimate the free and occupied space around the vehicle. Using monocular ﬁsheye cameras, we are able to cover a wider ﬁeld of view and detect obstacles closer to the car, which are often not within the standard ﬁeld of view of a classical binocular stereo camera setup. Our quantitative analysis shows that our system is accurate enough for navigation purposes of self-driving cars and runs in real-time.}, booktitle={2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, publisher={IEEE}, author={Hane, Christian and Sattler, Torsten and Pollefeys, Marc}, year={2015}, month={Sep}, pages={5101–5108} }
- @article{Heng_Choi_Cui_Geppert_Hu_Kuan_Liu_Nguyen_Yeo_Geiger_et al._2018, title={Project AutoVision: Localization and 3D Scene Perception for an Autonomous Vehicle with a Multi-Camera System}, url={http://arxiv.org/abs/1809.05477}, abstractNote={Project AutoVision aims to develop localization and 3D scene perception capabilities for a self-driving vehicle and which will enable autonomous navigation in urban and rural environments, in day and night, and with cameras as the only exteroceptive sensors. The sensor suite employs many cameras for both 360-degree coverage and accurate multi-view stereo; the use of low-cost cameras keeps the cost of this sensor suite to a minimum. In addition, the project seeks to extend the operating envelope to include GNSS-less conditions which are typical for environments with tall buildings, foliage, and tunnels. Emphasis is placed on marrying multi-view geometry with deep learning to enable the vehicle to localize and perceive in 3D space. This paper presents an overview of the project, and describes the sensor suite and current progress in the areas of calibration, localization, and perception.}, note={arXiv: 1809.05477}, journal={arXiv:1809.05477 [cs]}, author={Heng, Lionel and Choi, Benjamin and Cui, Zhaopeng and Geppert, Marcel and Hu, Sixing and Kuan, Benson and Liu, Peidong and Nguyen, Rang and Yeo, Ye Chuan and Geiger, Andreas and et al.}, year={2018}, month={Sep} }
- @article{Kiran_Roldao_Irastorza_Verastegui_Suss_Yogamani_Talpaert_Lepoutre_Trehard_2018, title={Real-time Dynamic Object Detection for Autonomous Driving using Prior 3D-Maps}, url={http://arxiv.org/abs/1809.11036}, abstractNote={Lidar has become an essential sensor for autonomous driving as it provides reliable depth estimation. Lidar is also the primary sensor used in building 3D maps which can be used even in the case of low-cost systems which do not use Lidar. Computation on Lidar point clouds is intensive as it requires processing of millions of points per second. Additionally there are many subsequent tasks such as clustering, detection, tracking and classiﬁcation which makes real-time execution challenging. In this paper, we discuss real-time dynamic object detection algorithms which leverages previously mapped Lidar point clouds to reduce processing. The prior 3D maps provide a static background model and we formulate dynamic object detection as a background subtraction problem. Computation and modeling challenges in the mapping and online execution pipeline are described. We propose a rejection cascade architecture to subtract road regions and other 3D regions separately. We implemented an initial version of our proposed algorithm and evaluated the accuracy on CARLA simulator.}, note={arXiv: 1809.11036}, journal={arXiv:1809.11036 [cs]}, author={Kiran, B. Ravi and Roldao, Luis and Irastorza, Benat and Verastegui, Renzo and Suss, Sebastian and Yogamani, Senthil and Talpaert, Victor and Lepoutre, Alexandre and Trehard, Guillaume}, year={2018}, month={Sep} }
- @inbook{Krombach_Droeschel_Behnke_2017, place={Cham}, title={Combining Feature-Based and Direct Methods for Semi-dense Real-Time Stereo Visual Odometry}, volume={531}, ISBN={978-3-319-48035-0}, url={http://link.springer.com/10.1007/978-3-319-48036-7_62}, DOI={10.1007/978-3-319-48036-7_62}, abstractNote={Visual motion estimation is challenging, due to high data rates, fast camera motions, featureless or repetitive environments, uneven lighting, and many other issues. In this work, we propose a twolayer approach for visual odometry with stereo cameras, which runs in real-time and combines feature-based matching with semi-dense direct image alignment. Our method initializes semi-dense depth estimation, which is computationally expensive, from motion that is tracked by a fast but robust feature point-based method. By that, we are not only able to eﬃciently estimate the pose of the camera with a high frame rate, but also to reconstruct the 3D structure of the environment at image gradients, which is useful, e.g., for mapping and obstacle avoidance. Experiments on datasets captured by a micro aerial vehicle (MAV) show that our approach is faster than state-of-the-art methods without losing accuracy. Moreover, our combined approach achieves promising results on the KITTI dataset, which is very challenging for direct methods, because of the low frame rate in conjunction with fast motion.}, booktitle={Intelligent Autonomous Systems 14}, publisher={Springer International Publishing}, author={Krombach, Nicola and Droeschel, David and Behnke, Sven}, editor={Chen, Weidong and Hosoda, Koh and Menegatti, Emanuele and Shimizu, Masahiro and Wang, HeshengEditors}, year={2017}, pages={855–868} }
- @inproceedings{Levinson_Montemerlo_Thrun_2007, title={Map-Based Precision Vehicle Localization in Urban Environments}, ISBN={978-0-262-52484-1}, url={http://www.roboticsproceedings.org/rss03/p16.pdf}, DOI={10.15607/RSS.2007.III.016}, abstractNote={Many urban navigation applications (e.g., autonomous navigation, driver assistance systems) can beneﬁt greatly from localization with centimeter accuracy. Yet such accuracy cannot be achieved reliably with GPS-based inertial guidance systems, speciﬁcally in urban settings.}, booktitle={Robotics: Science and Systems III}, publisher={Robotics: Science and Systems Foundation}, author={Levinson, J. and Montemerlo, M. and Thrun, S.}, year={2007}, month={Jun} }
- @inproceedings{Levinson_Thrun_2010, place={Anchorage, AK}, title={Robust vehicle localization in urban environments using probabilistic maps}, ISBN={978-1-4244-5038-1}, url={http://ieeexplore.ieee.org/document/5509700/}, DOI={10.1109/ROBOT.2010.5509700}, abstractNote={Autonomous vehicle navigation in dynamic urban environments requires localization accuracy exceeding that available from GPS-based inertial guidance systems. We have shown previously that GPS, IMU, and LIDAR data can be used to generate a high-resolution infrared remittance ground map that can be subsequently used for localization [4]. We now propose an extension to this approach that yields substantial improvements over previous work in vehicle localization, including higher precision, the ability to learn and improve maps over time, and increased robustness to environment changes and dynamic obstacles. Speciﬁcally, we model the environment, instead of as a spatial grid of ﬁxed infrared remittance values, as a probabilistic grid whereby every cell is represented as its own gaussian distribution over remittance values. Subsequently, Bayesian inference is able to preferentially weight parts of the map most likely to be stationary and of consistent angular reﬂectivity, thereby reducing uncertainty and catastrophic errors. Furthermore, by using ofﬂine SLAM to align multiple passes of the same environment, possibly separated in time by days or even months, it is possible to build an increasingly robust understanding of the world that can be then exploited for localization.}, booktitle={2010 IEEE International Conference on Robotics and Automation}, publisher={IEEE}, author={Levinson, Jesse and Thrun, Sebastian}, year={2010}, month={May}, pages={4372–4378} }
- @article{Liu_Geppert_Heng_Sattler_Geiger_Pollefeys, title={Towards Robust Visual Odometry with a Multi-Camera System}, abstractNote={We present a visual odometry (VO) algorithm for a multi-camera system and robust operation in challenging environments. Our algorithm consists of a pose tracker and a local mapper. The tracker estimates the current pose by minimizing photometric errors between the most recent keyframe and the current frame. The mapper initializes the depths of all sampled feature points using plane-sweeping stereo. To reduce pose drift, a sliding window optimizer is used to reﬁne poses and structure jointly. Our formulation is ﬂexible enough to support an arbitrary number of stereo cameras. We evaluate our algorithm thoroughly on ﬁve datasets. The datasets were captured in different conditions: daytime, night-time with near-infrared (NIR) illumination and nighttime without NIR illumination. Experimental results show that a multi-camera setup makes the VO more robust to challenging environments, especially night-time conditions, in which a single stereo conﬁguration fails easily due to the lack of features.}, author={Liu, Peidong and Geppert, Marcel and Heng, Lionel and Sattler, Torsten and Geiger, Andreas and Pollefeys, Marc}, pages={8} }
- @article{Ort_Paull_Rus, title={Autonomous Vehicle Navigation in Rural Environments without Detailed Prior Maps}, abstractNote={State-of-the-art autonomous driving systems rely heavily on detailed and highly accurate prior maps. However, outside of small urban areas, it is very challenging to build, store, and transmit detailed maps since the spatial scales are so large. Furthermore, maintaining detailed maps of large rural areas can be impracticable due to the rapid rate at which these environments can change. This is a signiﬁcant limitation for the widespread applicability of autonomous driving technology, which has the potential for an incredibly positive societal impact. In this paper, we address the problem of autonomous navigation in rural environments through a novel mapless driving framework that combines sparse topological maps for global navigation with a sensor-based perception system for local navigation. First, a local navigation goal within the sensor view of the vehicle is chosen as a waypoint leading towards the global goal. Next, the local perception system generates a feasible trajectory in the vehicle frame to reach the waypoint while abiding by the rules of the road for the segment being traversed. These trajectories are updated to remain in the local frame using the vehicle’s odometry and the associated uncertainty based on the least-squares residual and a recursive ﬁltering approach, which allows the vehicle to navigate road networks reliably, and at high speed, without detailed prior maps. We demonstrate the performance of the system on a full-scale autonomous vehicle navigating in a challenging rural environment and benchmark the system on a large amount of collected data.}, author={Ort, Teddy and Paull, Liam and Rus, Daniela}, pages={8} }
- @article{Silva_Roche_Kondoz, title={Fusion of LiDAR and Camera Sensor Data for Environment Sensing in Driverless Vehicles}, abstractNote={Driverless vehicles operate by sensing and perceiving its surrounding environment to make the accurate driving decisions. A combination of several different sensors such as LiDAR, radar, ultrasound sensors and cameras are utilized to sense the surrounding environment of driverless vehicles. The heterogeneous sensors simultaneously capture various physical attributes of the environment. Such multimodality and redundancy of sensing need to be positively utilized for reliable and consistent perception of the environment through sensor data fusion. However, these multimodal sensor data streams are different from each other in many ways, such as temporal and spatial resolution, data format, and geometric alignment. For the subsequent perception algorithms to utilize the diversity offered by multimodal sensing, the data streams need to be spatially, geometrically and temporally aligned with each other. In this paper, we address the problem of fusing the outputs of a Light Detection and Ranging (LiDAR) scanner and a wide-angle monocular image sensor. The outputs of LiDAR scanner and the image sensor are of different spatial resolutions and need to be aligned with each other. A geometrical model is used to spatially align the two sensor outputs, followed by a Gaussian Process (GP) regression based resolution matching algorithm to interpolate the missing data with quantifiable uncertainty. The results indicate that the proposed sensor data fusion framework significantly aids the subsequent perception steps, as illustrated by the performance improvement of a typical free space detection algorithm.}, author={Silva, Varuna De and Roche, Jamie and Kondoz, Ahmet}, pages={8} }
- @article{Thrun_Montemerlo_2006, title={The Graph SLAM Algorithm with Applications to Large-Scale Mapping of Urban Structures}, volume={25}, ISSN={0278-3649}, DOI={10.1177/0278364906065387}, abstractNote={This article presents GraphSLAM, a unifying algorithm for the offline SLAM                     problem. GraphSLAM is closely related to a recent sequence of research papers on                     applying optimization techniques to SLAM problems. It transforms the SLAM                     posterior into a graphical network, representing the log-likelihood of the data.                     It then reduces this graph using variable elimination techniques, arriving at a                     lower-dimensional problems that is then solved using conventional optimization                     techniques. As a result, GraphSLAM can generate maps with 108 or more                     features. The paper discusses a greedy algorithm for data association, and                     presents results for SLAM in urban environments with occasional GPS measurements.}, number={5–6}, journal={The International Journal of Robotics Research}, author={Thrun, Sebastian and Montemerlo, Michael}, year={2006}, month={May}, pages={403–429} }
- @inproceedings{Wolcott_Eustice_2014, place={Chicago, IL, USA}, title={Visual localization within LIDAR maps for automated urban driving}, ISBN={978-1-4799-6934-0}, url={http://ieeexplore.ieee.org/document/6942558/}, DOI={10.1109/IROS.2014.6942558}, abstractNote={This paper reports on the problem of map-based visual localization in urban environments for autonomous vehicles. Self-driving cars have become a reality on roadways and are going to be a consumer product in the near future. One of the most signiﬁcant road-blocks to autonomous vehicles is the prohibitive cost of the sensor suites necessary for localization. The most common sensor on these platforms, a three-dimensional (3D) light detection and ranging (LIDAR) scanner, generates dense point clouds with measures of surface reﬂectivity—which other state-of-the-art localization methods have shown are capable of centimeter-level accuracy. Alternatively, we seek to obtain comparable localization accuracy with signiﬁcantly cheaper, commodity cameras. We propose to localize a single monocular camera within a 3D prior groundmap, generated by a survey vehicle equipped with 3D LIDAR scanners. To do so, we exploit a graphics processing unit to generate several synthetic views of our belief environment. We then seek to maximize the normalized mutual information between our real camera measurements and these synthetic views. Results are shown for two different datasets, a 3.0 km and a 1.5 km trajectory, where we also compare against the state-of-the-art in LIDAR map-based localization.}, booktitle={2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}, publisher={IEEE}, author={Wolcott, Ryan W. and Eustice, Ryan M.}, year={2014}, month={Sep}, pages={176–183} }
- @book{Map-BasedPrecisionVehicleLocalization, abstractNote={inUrbanEnvironments Abstract—Many urban navigation applications (e.g., autonomous navigation, driver assistance systems) can benefit greatly from localization with centimeter accuracy. Yet such accuracy cannot be achieved reliably with GPS-based inertial guidancesystems,specificallyinurbansettings. We propose a technique for high-accuracy localization of movingvehiclesthatutilizesmapsofurbanenvironments.Our approachintegratesGPS,IMU,wheelodometry,andLIDARdata acquiredbyaninstrumentedvehicle,togeneratehigh-resolution environmentmaps.Offlinerelaxationtechniquessimilartorecent SLAMmethods[2,10,13,14,21,30]areemployedtobring the map into alignment at intersections and other regions of self-overlap.Byreducingthefinalmaptotheflatroadsurface, imprintsofothervehiclesareremoved.Theresultisa2-Dsurface imageofgroundreflectivityintheinfraredspectrumwith5cm pixelresolution. Tolocalizeamovingvehiclerelativetothesemaps,wepresenta particlefiltermethodforcorrelatingLIDARmeasurementswith thismap.Asweshowbyexperimentation,theresultingrelative accuraciesexceedthatofconventionalGPS-IMU-odometry-based methodsbymorethananorderofmagnitude.Specifically,we show that our algorithm is effective in urban environments, achievingreliablereal-timelocalizationwithaccuracyinthe10centimeterrange.ExperimentalresultsareprovidedforlocalizationinGPS-deniedenvironments,duringbadweather,andin densetraffic.Theproposedapproachhasbeenusedsuccessfully forsteeringacarthroughnarrow,dynamicurbanroads.} }
+
+@inproceedings{geiger_stereoscan:_2011,
+	address = {Baden-Baden, Germany},
+	title = {{StereoScan}: {Dense} 3d reconstruction in real-time},
+	isbn = {978-1-4577-0890-9},
+	shorttitle = {{StereoScan}},
+	url = {http://ieeexplore.ieee.org/document/5940405/},
+	doi = {10.1109/IVS.2011.5940405},
+	language = {en},
+	urldate = {2018-10-22},
+	booktitle = {2011 {IEEE} {Intelligent} {Vehicles} {Symposium} ({IV})},
+	publisher = {IEEE},
+	author = {Geiger, Andreas and Ziegler, Julius and Stiller, Christoph},
+	month = jun,
+	year = {2011},
+	pages = {963--968},
+	file = {Geiger et al. - 2011 - StereoScan Dense 3d reconstruction in real-time.pdf:/home/anurag/Zotero/storage/6ZJX52FF/Geiger et al. - 2011 - StereoScan Dense 3d reconstruction in real-time.pdf:application/pdf}
+}
+
+@article{cui_real-time_2018,
+	title = {Real-{Time} {Dense} {Mapping} for {Self}-driving {Vehicles} using {Fisheye} {Cameras}},
+	url = {http://arxiv.org/abs/1809.06132},
+	abstract = {We present a real-time dense geometric mapping algorithm for large-scale environments. Unlike existing methods which use pinhole cameras, our implementation is based on ﬁsheye cameras whose large ﬁeld of view beneﬁts various computer vision applications for self-driving vehicles such as visual-inertial odometry, visual localization, and object detection. Our algorithm runs on in-vehicle PCs at approximately 15 Hz, enabling vision-only 3D scene perception for self-driving vehicles. For each synchronized set of images captured by multiple cameras, we ﬁrst compute a depth map for a reference camera using plane-sweeping stereo. To maintain both accuracy and efﬁciency, while accounting for the fact that ﬁsheye images have a lower geometric resolution, we recover the depths using multiple image resolutions. We adopt the fast object detection framework, YOLOv3, to remove potentially dynamic objects. At the end of the pipeline, we fuse the ﬁsheye depth images into the truncated signed distance function (TSDF) volume to obtain a 3D map. We evaluate our method on large-scale urban datasets, and results show that our method works well in complex environments.},
+	language = {en},
+	urldate = {2018-10-22},
+	journal = {arXiv:1809.06132 [cs]},
+	author = {Cui, Zhaopeng and Heng, Lionel and Yeo, Ye Chuan and Geiger, Andreas and Pollefeys, Marc and Sattler, Torsten},
+	month = sep,
+	year = {2018},
+	note = {arXiv: 1809.06132},
+	keywords = {Computer Science - Robotics},
+	annote = {Comment: 8 pages},
+	file = {Cui et al. - 2018 - Real-Time Dense Mapping for Self-driving Vehicles .pdf:/home/anurag/Zotero/storage/JLC99C4M/Cui et al. - 2018 - Real-Time Dense Mapping for Self-driving Vehicles .pdf:application/pdf}
+}
+
+@article{kiran_real-time_2018,
+	title = {Real-time {Dynamic} {Object} {Detection} for {Autonomous} {Driving} using {Prior} 3D-{Maps}},
+	url = {http://arxiv.org/abs/1809.11036},
+	abstract = {Lidar has become an essential sensor for autonomous driving as it provides reliable depth estimation. Lidar is also the primary sensor used in building 3D maps which can be used even in the case of low-cost systems which do not use Lidar. Computation on Lidar point clouds is intensive as it requires processing of millions of points per second. Additionally there are many subsequent tasks such as clustering, detection, tracking and classiﬁcation which makes real-time execution challenging. In this paper, we discuss real-time dynamic object detection algorithms which leverages previously mapped Lidar point clouds to reduce processing. The prior 3D maps provide a static background model and we formulate dynamic object detection as a background subtraction problem. Computation and modeling challenges in the mapping and online execution pipeline are described. We propose a rejection cascade architecture to subtract road regions and other 3D regions separately. We implemented an initial version of our proposed algorithm and evaluated the accuracy on CARLA simulator.},
+	language = {en},
+	urldate = {2018-10-22},
+	journal = {arXiv:1809.11036 [cs]},
+	author = {Kiran, B. Ravi and Roldao, Luis and Irastorza, Benat and Verastegui, Renzo and Suss, Sebastian and Yogamani, Senthil and Talpaert, Victor and Lepoutre, Alexandre and Trehard, Guillaume},
+	month = sep,
+	year = {2018},
+	note = {arXiv: 1809.11036},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: Preprint Submission to ECCVW AutoNUE 2018},
+	file = {Kiran et al. - 2018 - Real-time Dynamic Object Detection for Autonomous .pdf:/home/anurag/Zotero/storage/XTE3KM3S/Kiran et al. - 2018 - Real-time Dynamic Object Detection for Autonomous .pdf:application/pdf}
+}
+
+@article{barsan_robust_nodate,
+	title = {Robust {Dense} {Mapping} for {Large}-{Scale} {Dynamic} {Environments}},
+	abstract = {We present a stereo-based dense mapping algorithm for large-scale dynamic urban environments. In contrast to other existing methods, we simultaneously reconstruct the static background, the moving objects, and the potentially moving but currently stationary objects separately, which is desirable for high-level mobile robotic tasks such as path planning in crowded environments. We use both instance-aware semantic segmentation and sparse scene ﬂow to classify objects as either background, moving, or potentially moving, thereby ensuring that the system is able to model objects with the potential to transition from static to dynamic, such as parked cars. Given camera poses estimated from visual odometry, both the background and the (potentially) moving objects are reconstructed separately by fusing the depth maps computed from the stereo input. In addition to visual odometry, sparse scene ﬂow is also used to estimate the 3D motions of the detected moving objects, in order to reconstruct them accurately. A map pruning technique is further developed to improve reconstruction accuracy and reduce memory consumption, leading to increased scalability. We evaluate our system thoroughly on the well-known KITTI dataset. Our system is capable of running on a PC at approximately 2.5Hz, with the primary bottleneck being the instance-aware semantic segmentation, which is a limitation we hope to address in future work. The source code is available from the project websitea.},
+	language = {en},
+	author = {Barsan, Ioan Andrei and Liu, Peidong and Pollefeys, Marc and Geiger, Andreas},
+	pages = {8},
+	file = {Barsan et al. - Robust Dense Mapping for Large-Scale Dynamic Envir.pdf:/home/anurag/Zotero/storage/G9ZVW9FF/Barsan et al. - Robust Dense Mapping for Large-Scale Dynamic Envir.pdf:application/pdf}
+}
+
+@article{liu_towards_nodate,
+	title = {Towards {Robust} {Visual} {Odometry} with a {Multi}-{Camera} {System}},
+	abstract = {We present a visual odometry (VO) algorithm for a multi-camera system and robust operation in challenging environments. Our algorithm consists of a pose tracker and a local mapper. The tracker estimates the current pose by minimizing photometric errors between the most recent keyframe and the current frame. The mapper initializes the depths of all sampled feature points using plane-sweeping stereo. To reduce pose drift, a sliding window optimizer is used to reﬁne poses and structure jointly. Our formulation is ﬂexible enough to support an arbitrary number of stereo cameras. We evaluate our algorithm thoroughly on ﬁve datasets. The datasets were captured in different conditions: daytime, night-time with near-infrared (NIR) illumination and nighttime without NIR illumination. Experimental results show that a multi-camera setup makes the VO more robust to challenging environments, especially night-time conditions, in which a single stereo conﬁguration fails easily due to the lack of features.},
+	language = {en},
+	author = {Liu, Peidong and Geppert, Marcel and Heng, Lionel and Sattler, Torsten and Geiger, Andreas and Pollefeys, Marc},
+	pages = {8},
+	file = {Liu et al. - Towards Robust Visual Odometry with a Multi-Camera.pdf:/home/anurag/Zotero/storage/HJALB3MR/Liu et al. - Towards Robust Visual Odometry with a Multi-Camera.pdf:application/pdf}
+}
+
+@inproceedings{wolcott_visual_2014,
+	address = {Chicago, IL, USA},
+	title = {Visual localization within {LIDAR} maps for automated urban driving},
+	isbn = {978-1-4799-6934-0 978-1-4799-6931-9},
+	url = {http://ieeexplore.ieee.org/document/6942558/},
+	doi = {10.1109/IROS.2014.6942558},
+	abstract = {This paper reports on the problem of map-based visual localization in urban environments for autonomous vehicles. Self-driving cars have become a reality on roadways and are going to be a consumer product in the near future. One of the most signiﬁcant road-blocks to autonomous vehicles is the prohibitive cost of the sensor suites necessary for localization. The most common sensor on these platforms, a three-dimensional (3D) light detection and ranging (LIDAR) scanner, generates dense point clouds with measures of surface reﬂectivity—which other state-of-the-art localization methods have shown are capable of centimeter-level accuracy. Alternatively, we seek to obtain comparable localization accuracy with signiﬁcantly cheaper, commodity cameras. We propose to localize a single monocular camera within a 3D prior groundmap, generated by a survey vehicle equipped with 3D LIDAR scanners. To do so, we exploit a graphics processing unit to generate several synthetic views of our belief environment. We then seek to maximize the normalized mutual information between our real camera measurements and these synthetic views. Results are shown for two different datasets, a 3.0 km and a 1.5 km trajectory, where we also compare against the state-of-the-art in LIDAR map-based localization.},
+	language = {en},
+	urldate = {2018-10-22},
+	booktitle = {2014 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots} and {Systems}},
+	publisher = {IEEE},
+	author = {Wolcott, Ryan W. and Eustice, Ryan M.},
+	month = sep,
+	year = {2014},
+	pages = {176--183},
+	file = {Wolcott and Eustice - 2014 - Visual localization within LIDAR maps for automate.pdf:/home/anurag/Zotero/storage/KKANQE7N/Wolcott and Eustice - 2014 - Visual localization within LIDAR maps for automate.pdf:application/pdf}
+}
+
+@article{heng_project_2018,
+	title = {Project {AutoVision}: {Localization} and 3D {Scene} {Perception} for an {Autonomous} {Vehicle} with a {Multi}-{Camera} {System}},
+	shorttitle = {Project {AutoVision}},
+	url = {http://arxiv.org/abs/1809.05477},
+	abstract = {Project AutoVision aims to develop localization and 3D scene perception capabilities for a self-driving vehicle and which will enable autonomous navigation in urban and rural environments, in day and night, and with cameras as the only exteroceptive sensors. The sensor suite employs many cameras for both 360-degree coverage and accurate multi-view stereo; the use of low-cost cameras keeps the cost of this sensor suite to a minimum. In addition, the project seeks to extend the operating envelope to include GNSS-less conditions which are typical for environments with tall buildings, foliage, and tunnels. Emphasis is placed on marrying multi-view geometry with deep learning to enable the vehicle to localize and perceive in 3D space. This paper presents an overview of the project, and describes the sensor suite and current progress in the areas of calibration, localization, and perception.},
+	language = {en},
+	urldate = {2018-10-22},
+	journal = {arXiv:1809.05477 [cs]},
+	author = {Heng, Lionel and Choi, Benjamin and Cui, Zhaopeng and Geppert, Marcel and Hu, Sixing and Kuan, Benson and Liu, Peidong and Nguyen, Rang and Yeo, Ye Chuan and Geiger, Andreas and Lee, Gim Hee and Pollefeys, Marc and Sattler, Torsten},
+	month = sep,
+	year = {2018},
+	note = {arXiv: 1809.05477},
+	keywords = {Computer Science - Robotics},
+	file = {Heng et al. - 2018 - Project AutoVision Localization and 3D Scene Perc.pdf:/home/anurag/Zotero/storage/SCUQSNBD/Heng et al. - 2018 - Project AutoVision Localization and 3D Scene Perc.pdf:application/pdf}
+}
+
+@inproceedings{hane_obstacle_2015,
+	address = {Hamburg, Germany},
+	title = {Obstacle detection for self-driving cars using only monocular cameras and wheel odometry},
+	isbn = {978-1-4799-9994-1},
+	url = {http://ieeexplore.ieee.org/document/7354095/},
+	doi = {10.1109/IROS.2015.7354095},
+	abstract = {Mapping the environment is crucial to enable path planning and obstacle avoidance for self-driving vehicles and other robots. In this paper, we concentrate on ground-based vehicles and present an approach which extracts static obstacles from depth maps computed out of multiple consecutive images. In contrast to existing approaches, our system does not require accurate visual inertial odometry estimation but solely relies on the readily available wheel odometry. To handle the resulting higher pose uncertainty, our system fuses obstacle detections over time and between cameras to estimate the free and occupied space around the vehicle. Using monocular ﬁsheye cameras, we are able to cover a wider ﬁeld of view and detect obstacles closer to the car, which are often not within the standard ﬁeld of view of a classical binocular stereo camera setup. Our quantitative analysis shows that our system is accurate enough for navigation purposes of self-driving cars and runs in real-time.},
+	language = {en},
+	urldate = {2018-10-22},
+	booktitle = {2015 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots} and {Systems} ({IROS})},
+	publisher = {IEEE},
+	author = {Hane, Christian and Sattler, Torsten and Pollefeys, Marc},
+	month = sep,
+	year = {2015},
+	pages = {5101--5108},
+	file = {Hane et al. - 2015 - Obstacle detection for self-driving cars using onl.pdf:/home/anurag/Zotero/storage/KIJU8JF9/Hane et al. - 2015 - Obstacle detection for self-driving cars using onl.pdf:application/pdf}
+}
+
+@incollection{chen_combining_2017,
+	address = {Cham},
+	title = {Combining {Feature}-{Based} and {Direct} {Methods} for {Semi}-dense {Real}-{Time} {Stereo} {Visual} {Odometry}},
+	volume = {531},
+	isbn = {978-3-319-48035-0 978-3-319-48036-7},
+	url = {http://link.springer.com/10.1007/978-3-319-48036-7_62},
+	abstract = {Visual motion estimation is challenging, due to high data rates, fast camera motions, featureless or repetitive environments, uneven lighting, and many other issues. In this work, we propose a twolayer approach for visual odometry with stereo cameras, which runs in real-time and combines feature-based matching with semi-dense direct image alignment. Our method initializes semi-dense depth estimation, which is computationally expensive, from motion that is tracked by a fast but robust feature point-based method. By that, we are not only able to eﬃciently estimate the pose of the camera with a high frame rate, but also to reconstruct the 3D structure of the environment at image gradients, which is useful, e.g., for mapping and obstacle avoidance. Experiments on datasets captured by a micro aerial vehicle (MAV) show that our approach is faster than state-of-the-art methods without losing accuracy. Moreover, our combined approach achieves promising results on the KITTI dataset, which is very challenging for direct methods, because of the low frame rate in conjunction with fast motion.},
+	language = {en},
+	urldate = {2018-10-22},
+	booktitle = {Intelligent {Autonomous} {Systems} 14},
+	publisher = {Springer International Publishing},
+	author = {Krombach, Nicola and Droeschel, David and Behnke, Sven},
+	editor = {Chen, Weidong and Hosoda, Koh and Menegatti, Emanuele and Shimizu, Masahiro and Wang, Hesheng},
+	year = {2017},
+	doi = {10.1007/978-3-319-48036-7_62},
+	pages = {855--868},
+	file = {Krombach et al. - 2017 - Combining Feature-Based and Direct Methods for Sem.pdf:/home/anurag/Zotero/storage/VWSCRHHM/Krombach et al. - 2017 - Combining Feature-Based and Direct Methods for Sem.pdf:application/pdf}
+}
+
+@article{silva_fusion_nodate,
+	title = {Fusion of {LiDAR} and {Camera} {Sensor} {Data} for {Environment} {Sensing} in {Driverless} {Vehicles}},
+	abstract = {Driverless vehicles operate by sensing and perceiving its surrounding environment to make the accurate driving decisions. A combination of several different sensors such as LiDAR, radar, ultrasound sensors and cameras are utilized to sense the surrounding environment of driverless vehicles. The heterogeneous sensors simultaneously capture various physical attributes of the environment. Such multimodality and redundancy of sensing need to be positively utilized for reliable and consistent perception of the environment through sensor data fusion. However, these multimodal sensor data streams are different from each other in many ways, such as temporal and spatial resolution, data format, and geometric alignment. For the subsequent perception algorithms to utilize the diversity offered by multimodal sensing, the data streams need to be spatially, geometrically and temporally aligned with each other. In this paper, we address the problem of fusing the outputs of a Light Detection and Ranging (LiDAR) scanner and a wide-angle monocular image sensor. The outputs of LiDAR scanner and the image sensor are of different spatial resolutions and need to be aligned with each other. A geometrical model is used to spatially align the two sensor outputs, followed by a Gaussian Process (GP) regression based resolution matching algorithm to interpolate the missing data with quantifiable uncertainty. The results indicate that the proposed sensor data fusion framework significantly aids the subsequent perception steps, as illustrated by the performance improvement of a typical free space detection algorithm.},
+	language = {en},
+	author = {Silva, Varuna De and Roche, Jamie and Kondoz, Ahmet},
+	pages = {8},
+	file = {Silva et al. - Fusion of LiDAR and Camera Sensor Data for Environ.pdf:/home/anurag/Zotero/storage/FZPI2SZF/Silva et al. - Fusion of LiDAR and Camera Sensor Data for Environ.pdf:application/pdf}
+}
+
+@article{ort_autonomous_nodate,
+	title = {Autonomous {Vehicle} {Navigation} in {Rural} {Environments} without {Detailed} {Prior} {Maps}},
+	abstract = {State-of-the-art autonomous driving systems rely heavily on detailed and highly accurate prior maps. However, outside of small urban areas, it is very challenging to build, store, and transmit detailed maps since the spatial scales are so large. Furthermore, maintaining detailed maps of large rural areas can be impracticable due to the rapid rate at which these environments can change. This is a signiﬁcant limitation for the widespread applicability of autonomous driving technology, which has the potential for an incredibly positive societal impact. In this paper, we address the problem of autonomous navigation in rural environments through a novel mapless driving framework that combines sparse topological maps for global navigation with a sensor-based perception system for local navigation. First, a local navigation goal within the sensor view of the vehicle is chosen as a waypoint leading towards the global goal. Next, the local perception system generates a feasible trajectory in the vehicle frame to reach the waypoint while abiding by the rules of the road for the segment being traversed. These trajectories are updated to remain in the local frame using the vehicle’s odometry and the associated uncertainty based on the least-squares residual and a recursive ﬁltering approach, which allows the vehicle to navigate road networks reliably, and at high speed, without detailed prior maps. We demonstrate the performance of the system on a full-scale autonomous vehicle navigating in a challenging rural environment and benchmark the system on a large amount of collected data.},
+	language = {en},
+	author = {Ort, Teddy and Paull, Liam and Rus, Daniela},
+	pages = {8},
+	file = {Ort et al. - Autonomous Vehicle Navigation in Rural Environment.pdf:/home/anurag/Zotero/storage/PG93CS4G/Ort et al. - Autonomous Vehicle Navigation in Rural Environment.pdf:application/pdf}
+}
+
+@inproceedings{levinson_robust_2010,
+	address = {Anchorage, AK},
+	title = {Robust vehicle localization in urban environments using probabilistic maps},
+	isbn = {978-1-4244-5038-1},
+	url = {http://ieeexplore.ieee.org/document/5509700/},
+	doi = {10.1109/ROBOT.2010.5509700},
+	abstract = {Autonomous vehicle navigation in dynamic urban environments requires localization accuracy exceeding that available from GPS-based inertial guidance systems. We have shown previously that GPS, IMU, and LIDAR data can be used to generate a high-resolution infrared remittance ground map that can be subsequently used for localization [4]. We now propose an extension to this approach that yields substantial improvements over previous work in vehicle localization, including higher precision, the ability to learn and improve maps over time, and increased robustness to environment changes and dynamic obstacles. Speciﬁcally, we model the environment, instead of as a spatial grid of ﬁxed infrared remittance values, as a probabilistic grid whereby every cell is represented as its own gaussian distribution over remittance values. Subsequently, Bayesian inference is able to preferentially weight parts of the map most likely to be stationary and of consistent angular reﬂectivity, thereby reducing uncertainty and catastrophic errors. Furthermore, by using ofﬂine SLAM to align multiple passes of the same environment, possibly separated in time by days or even months, it is possible to build an increasingly robust understanding of the world that can be then exploited for localization.},
+	language = {en},
+	urldate = {2018-10-22},
+	booktitle = {2010 {IEEE} {International} {Conference} on {Robotics} and {Automation}},
+	publisher = {IEEE},
+	author = {Levinson, Jesse and Thrun, Sebastian},
+	month = may,
+	year = {2010},
+	pages = {4372--4378},
+	file = {Levinson and Thrun - 2010 - Robust vehicle localization in urban environments .pdf:/home/anurag/Zotero/storage/ZLH3M22T/Levinson and Thrun - 2010 - Robust vehicle localization in urban environments .pdf:application/pdf}
+}
+
+@inproceedings{levinson_map-based_2007,
+	title = {Map-{Based} {Precision} {Vehicle} {Localization} in {Urban} {Environments}},
+	isbn = {978-0-262-52484-1},
+	url = {http://www.roboticsproceedings.org/rss03/p16.pdf},
+	doi = {10.15607/RSS.2007.III.016},
+	abstract = {Many urban navigation applications (e.g., autonomous navigation, driver assistance systems) can beneﬁt greatly from localization with centimeter accuracy. Yet such accuracy cannot be achieved reliably with GPS-based inertial guidance systems, speciﬁcally in urban settings.},
+	language = {en},
+	urldate = {2018-10-22},
+	booktitle = {Robotics: {Science} and {Systems} {III}},
+	publisher = {Robotics: Science and Systems Foundation},
+	author = {Levinson, J. and Montemerlo, M. and Thrun, S.},
+	month = jun,
+	year = {2007},
+	file = {Levinson et al. - 2007 - Map-Based Precision Vehicle Localization in Urban .pdf:/home/anurag/Zotero/storage/49G9GBC7/Levinson et al. - 2007 - Map-Based Precision Vehicle Localization in Urban .pdf:application/pdf}
+}
+
+@article{durrant-whyte_simultaneous_nodate,
+	title = {Simultaneous {Localisation} and {Mapping} ({SLAM}): {Part} {I} {The} {Essential} {Algorithms}},
+	abstract = {This tutorial provides an introduction to Simultaneous Localisation and Mapping (SLAM) and the extensive research on SLAM that has been undertaken over the past decade. SLAM is the process by which a mobile robot can build a map of an environment and at the same time use this map to compute it’s own location. The past decade has seen rapid and exciting progress in solving the SLAM problem together with many compelling implementations of SLAM methods. Part I of this tutorial (this paper), describes the probabilistic form of the SLAM problem, essential solution methods and signiﬁcant implementations. Part II of this tutorial will be concerned with recent advances in computational methods and new formulations of the SLAM problem for large scale and complex environments.},
+	language = {en},
+	author = {Durrant-Whyte, Hugh and Bailey, Tim},
+	pages = {9},
+	file = {Durrant-Whyte and Bailey - Simultaneous Localisation and Mapping (SLAM) Part.pdf:/home/anurag/Zotero/storage/LX9EYDLN/Durrant-Whyte and Bailey - Simultaneous Localisation and Mapping (SLAM) Part.pdf:application/pdf}
+}
+
+@article{thrun_graph_2006,
+	title = {The {Graph} {SLAM} {Algorithm} with {Applications} to {Large}-{Scale} {Mapping} of {Urban} {Structures}},
+	volume = {25},
+	issn = {0278-3649},
+	url = {https://doi.org/10.1177/0278364906065387},
+	doi = {10.1177/0278364906065387},
+	abstract = {This article presents GraphSLAM, a unifying algorithm for the offline SLAM                     problem. GraphSLAM is closely related to a recent sequence of research papers on                     applying optimization techniques to SLAM problems. It transforms the SLAM                     posterior into a graphical network, representing the log-likelihood of the data.                     It then reduces this graph using variable elimination techniques, arriving at a                     lower-dimensional problems that is then solved using conventional optimization                     techniques. As a result, GraphSLAM can generate maps with 108 or more                     features. The paper discusses a greedy algorithm for data association, and                     presents results for SLAM in urban environments with occasional GPS measurements.},
+	language = {en},
+	number = {5-6},
+	urldate = {2018-10-23},
+	journal = {The International Journal of Robotics Research},
+	author = {Thrun, Sebastian and Montemerlo, Michael},
+	month = may,
+	year = {2006},
+	pages = {403--429},
+	file = {SAGE PDF Full Text:/home/anurag/Zotero/storage/GKGJYG7X/Thrun and Montemerlo - 2006 - The Graph SLAM Algorithm with Applications to Larg.pdf:application/pdf}
+}
+
+@article{bailey_simultaneous_2006,
+	title = {Simultaneous localization and mapping ({SLAM}): part {II}},
+	volume = {13},
+	issn = {1070-9932},
+	shorttitle = {Simultaneous localization and mapping ({SLAM})},
+	doi = {10.1109/MRA.2006.1678144},
+	abstract = {This paper discusses the recursive Bayesian formulation of the simultaneous localization and mapping (SLAM) problem in which probability distributions or estimates of absolute or relative locations of landmarks and vehicle pose are obtained. The paper focuses on three key areas: computational complexity; data association; and environment representation},
+	number = {3},
+	journal = {IEEE Robotics Automation Magazine},
+	author = {Bailey, T. and Durrant-Whyte, H.},
+	month = sep,
+	year = {2006},
+	keywords = {Bayes methods, Bayesian methods, computational complexity, Computational complexity, Computational efficiency, data association, Delay estimation, environment representation, mobile robot, mobile robots, Mobile robots, path planning, probability distributions, recursive Bayesian formulation, Robotics and automation, Robustness, simultaneous localization and mapping, Simultaneous localization and mapping, statistical distributions, Uncertainty, vehicle pose, Vehicles},
+	pages = {108--117},
+	file = {IEEE Xplore Abstract Record:/home/anurag/Zotero/storage/3AH4FRMI/1678144.html:text/html;IEEE Xplore Full Text PDF:/home/anurag/Zotero/storage/W7K6JYZU/Bailey and Durrant-Whyte - 2006 - Simultaneous localization and mapping (SLAM) part.pdf:application/pdf}
+}
+
+@article{jnr_robotic_nodate,
+	title = {Robotic {Path} {Planning} using {Rapidly} exploring {Random} {Trees}},
+	abstract = {Rapidly exploring Random Tree (RRT) path planning methods provide feasible paths between a start and goal point in configuration spaces containing obstacles, sacrificing optimality (eg. Shortest path) for speed. The raw resultant paths are generally jagged and the cost of extending the tree can increase steeply as the number of existing branches grow. This paper provides details of a speed-up method using KD trees and a path smoothing procedure of practical interest.},
+	language = {en},
+	author = {Jnr, Zoltan Deak},
+	pages = {5},
+	file = {Jnr - Robotic Path Planning using Rapidly exploring Rand.pdf:/home/anurag/Zotero/storage/4X6NTJ93/Jnr - Robotic Path Planning using Rapidly exploring Rand.pdf:application/pdf}
+}
+
+@article{thrun_robust_2001,
+	title = {Robust {Monte} {Carlo} localization for mobile robots},
+	volume = {128},
+	issn = {0004-3702},
+	url = {http://www.sciencedirect.com/science/article/pii/S0004370201000698},
+	doi = {10.1016/S0004-3702(01)00069-8},
+	abstract = {Mobile robot localization is the problem of determining a robot's pose from sensor data. This article presents a family of probabilistic localization algorithms known as Monte Carlo Localization (MCL). MCL algorithms represent a robot's belief by a set of weighted hypotheses (samples), which approximate the posterior under a common Bayesian formulation of the localization problem. Building on the basic MCL algorithm, this article develops a more robust algorithm called Mixture-MCL, which integrates two complimentary ways of generating samples in the estimation. To apply this algorithm to mobile robots equipped with range finders, a kernel density tree is learned that permits fast sampling. Systematic empirical results illustrate the robustness and computational efficiency of the approach.},
+	number = {1},
+	urldate = {2018-10-24},
+	journal = {Artificial Intelligence},
+	author = {Thrun, Sebastian and Fox, Dieter and Burgard, Wolfram and Dellaert, Frank},
+	month = may,
+	year = {2001},
+	keywords = {Kernel density trees, Localization, Mobile robots, Particle filters, Position estimation},
+	pages = {99--141},
+	file = {ScienceDirect Full Text PDF:/home/anurag/Zotero/storage/8Z98LTZX/Thrun et al. - 2001 - Robust Monte Carlo localization for mobile robots.pdf:application/pdf;ScienceDirect Snapshot:/home/anurag/Zotero/storage/CFHWY9VM/S0004370201000698.html:text/html}
+}

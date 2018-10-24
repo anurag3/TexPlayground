@@ -11,23 +11,36 @@
 	\maketitle
 	\newpage
 	\pagenumbering{arabic}
-		
+	
+	\begin{comment}	
 	\begin{abstract}
-		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this paper we would like to propose an innovative system that would create a dense geometric mapping algorithm for identifying and mapping static digital markers like Traffic Signal Posts, Speed Limit Signs. Our system would also be able to classify static and dynamic obstacles, and remove dynamic obstacles from the map. 
+		
+		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this paper we would like to propose an innovative system that would create a dense geometric mapping algorithm for identifying and mapping static digital markers like Traffic Signal Posts, Speed Limit Signs. Our system would also be able to classify static and dynamic obstacles, and remove dynamic obstacles from the map.
+		
 	\end{abstract}
+	\end{comment}
 	
 	\section{Introduction}
 	\paragraph{}
-	Autonomous vehicles have the potential to revolutionize the transportation industry by drastically improving safety and efficiency of transportation. 
-	
-	Primarily Used Sensors: LiDAR, Camera, IMU, GNSS, 
-	
-	The level of autonomy in Autonomous Driving Systems is determined by its ability to perceive and navigate in complex environments. To accomplish this task the system needs to sense and generate an accurate map of the environment, find its location in the map and navigate to the destination. Several approaches have been proposed 
-	\cite{Thrun_Montemerlo_2006} 
-	\cite{Durrant-Whyte_Bailey}
+	Autonomous vehicles have the potential to revolutionize the transportation industry by drastically improving safety and efficiency of transportation. In order to navigate through complex environments the vehicles rely on wide array of sensors like Light Detection And Ranging (LiDAR), Camera, Inertial Measurement Unit (IMU), Global Navigation Satellite System (GNSS). The level of autonomy in Autonomous Driving Systems is determined by its ability to perceive and navigate in complex environments. Simultaneous Localization And Mapping (SLAM) has been an active area of research in Robotics
+	\cite{durrant-whyte_simultaneous_nodate}
+	\cite{bailey_simultaneous_2006}.
+	To accomplish this task the system needs to sense and generate an accurate map of the environment using different SLAM techniques, find its location in the map using Monte Carlo Localization
+	\cite{thrun_robust_2001}
+	or Kalman filter based localizations 
+	and navigate to the destination. Several approaches have been proposed 
+	\cite{thrun_graph_2006} 
+	\cite{durrant-whyte_simultaneous_nodate}
 	,
 	however the most successful one
-	\cite{Levinson_Montemerlo_Thrun_2007}
+	\cite{levinson_map-based_2007}
+	was developed by Stanford Artificial Intelligence Lab. 
+	
+	However, most of these researches have been focused on very specific type of environments and the challenge of mapping large-scale environments is still a work in progress.
+	
+	
+	Talk about how large scale mapping is still untackled
+	
 	
 
 	\begin{comment}
@@ -41,7 +54,7 @@
 	\paragraph{}
 	Different Mapping Techniques have been deployed for generating
 	
-	1. Visual Mapping - S Thrun Reference \cite{Levinson_Montemerlo_Thrun_2007}
+	1. Visual Mapping - S Thrun Reference 
 	
 	2. Lidar Mapping - A Geiger Reference 
 	

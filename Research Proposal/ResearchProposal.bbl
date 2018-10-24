@@ -21,21 +21,40 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Thrun_Montemerlo_2006}
-S.~Thrun and M.~Montemerlo, ``The graph slam algorithm with applications to
-  large-scale mapping of urban structures,'' \emph{The International Journal of
-  Robotics Research}, vol.~25, no. 5–6, p. 403–429, May 2006.
+\bibitem{durrant-whyte_simultaneous_nodate}
+H.~Durrant-Whyte and T.~Bailey, ``\BIBforeignlanguage{en}{Simultaneous
+  {Localisation} and {Mapping} ({SLAM}): {Part} {I} {The} {Essential}
+  {Algorithms}},'' p.~9.
 
-\bibitem{Durrant-Whyte_Bailey}
-H.~Durrant-Whyte and T.~Bailey, ``Simultaneous localisation and mapping (slam):
-  Part i the essential algorithms,'' p.~9.
+\bibitem{bailey_simultaneous_2006}
+T.~Bailey and H.~Durrant-Whyte, ``Simultaneous localization and mapping
+  ({SLAM}): part {II},'' \emph{IEEE Robotics Automation Magazine}, vol.~13,
+  no.~3, pp. 108--117, Sep. 2006.
 
-\bibitem{Levinson_Montemerlo_Thrun_2007}
+\bibitem{thrun_robust_2001}
 \BIBentryALTinterwordspacing
-J.~Levinson, M.~Montemerlo, and S.~Thrun, ``Map-based precision vehicle
-  localization in urban environments,'' in \emph{Robotics: Science and Systems
-  III}.\hskip 1em plus 0.5em minus 0.4em\relax Robotics: Science and Systems
-  Foundation, Jun 2007. [Online]. Available:
+S.~Thrun, D.~Fox, W.~Burgard, and F.~Dellaert, ``Robust {Monte} {Carlo}
+  localization for mobile robots,'' \emph{Artificial Intelligence}, vol. 128,
+  no.~1, pp. 99--141, May 2001. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0004370201000698}
+\BIBentrySTDinterwordspacing
+
+\bibitem{thrun_graph_2006}
+\BIBentryALTinterwordspacing
+S.~Thrun and M.~Montemerlo, ``\BIBforeignlanguage{en}{The {Graph} {SLAM}
+  {Algorithm} with {Applications} to {Large}-{Scale} {Mapping} of {Urban}
+  {Structures}},'' \emph{\BIBforeignlanguage{en}{The International Journal of
+  Robotics Research}}, vol.~25, no. 5-6, pp. 403--429, May 2006. [Online].
+  Available: \url{https://doi.org/10.1177/0278364906065387}
+\BIBentrySTDinterwordspacing
+
+\bibitem{levinson_map-based_2007}
+\BIBentryALTinterwordspacing
+J.~Levinson, M.~Montemerlo, and S.~Thrun, ``\BIBforeignlanguage{en}{Map-{Based}
+  {Precision} {Vehicle} {Localization} in {Urban} {Environments}},'' in
+  \emph{\BIBforeignlanguage{en}{Robotics: {Science} and {Systems}
+  {III}}}.\hskip 1em plus 0.5em minus 0.4em\relax Robotics: Science and Systems
+  Foundation, Jun. 2007. [Online]. Available:
   \url{http://www.roboticsproceedings.org/rss03/p16.pdf}
 \BIBentrySTDinterwordspacing
 

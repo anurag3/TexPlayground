@@ -8,56 +8,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ResearchProposal.bib
-I was expecting a `,' or a `}'---line 6 of file ResearchProposal.bib
- :  @article{Heng_Choi_Cui_Geppert_Hu_Kuan_Liu_Nguyen_Yeo_Geiger_et 
- :                                                                  al._2018, title={Project AutoVision: Localization and 3D Scene Perception for an Autonomous Vehicle with a Multi-Camera System}, url={http://arxiv.org/abs/1809.05477}, abstractNote={Project AutoVision aims to develop localization and 3D scene perception capabilities for a self-driving vehicle and which will enable autonomous navigation in urban and rural environments, in day and night, and with cameras as the only exteroceptive sensors. The sensor suite employs many cameras for both 360-degree coverage and accurate multi-view stereo; the use of low-cost cameras keeps the cost of this sensor suite to a minimum. In addition, the project seeks to extend the operating envelope to include GNSS-less conditions which are typical for environments with tall buildings, foliage, and tunnels. Emphasis is placed on marrying multi-view geometry with deep learning to enable the vehicle to localize and perceive in 3D space. This paper presents an overview of the project, and describes the sensor suite and current progress in the areas of calibration, localization, and perception.}, note={arXiv: 1809.05477}, journal={arXiv:1809.05477 [cs]}, author={Heng, Lionel and Choi, Benjamin and Cui, Zhaopeng and Geppert, Marcel and Hu, Sixing and Kuan, Benson and Liu, Peidong and Nguyen, Rang and Yeo, Ye Chuan and Geiger, Andreas and et al.}, year={2018}, month={Sep} }
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in Durrant-Whyte_Bailey
-Warning--empty year in Durrant-Whyte_Bailey
+Warning--empty journal in durrant-whyte_simultaneous_nodate
+Warning--empty year in durrant-whyte_simultaneous_nodate
 
 Done.
-You've used 3 entries,
+You've used 5 entries,
             4087 wiz_defined-function locations,
-            842 strings with 7981 characters,
-and the built_in function-call counts, 1798 in all, are:
-= -- 144
-> -- 31
-< -- 4
-+ -- 14
-- -- 7
-* -- 98
-:= -- 297
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 3
-chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 151
-empty$ -- 150
-format.name$ -- 10
-if$ -- 398
+            854 strings with 8401 characters,
+and the built_in function-call counts, 3913 in all, are:
+= -- 319
+> -- 80
+< -- 33
++ -- 43
+- -- 13
+* -- 237
+:= -- 622
+add.period$ -- 11
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 69
+cite$ -- 7
+duplicate$ -- 276
+empty$ -- 289
+format.name$ -- 18
+if$ -- 872
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 27
-newline$ -- 34
-num.names$ -- 3
-pop$ -- 68
+int.to.str$ -- 5
+missing$ -- 47
+newline$ -- 44
+num.names$ -- 5
+pop$ -- 99
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 138
+skip$ -- 281
 stack$ -- 0
-substring$ -- 23
-swap$ -- 103
-text.length$ -- 4
+substring$ -- 167
+swap$ -- 238
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
+type$ -- 5
 warning$ -- 2
-while$ -- 5
-width$ -- 4
-write$ -- 51
-(There was 1 error message)
+while$ -- 18
+width$ -- 6
+write$ -- 79
+(There were 2 warnings)
