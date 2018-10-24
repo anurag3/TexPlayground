@@ -13,47 +13,49 @@ Database file #1: ResearchProposal.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in durrant-whyte_simultaneous_nodate
 Warning--empty year in durrant-whyte_simultaneous_nodate
+Warning--empty journal in silva_fusion_nodate
+Warning--empty year in silva_fusion_nodate
 
 Done.
-You've used 5 entries,
+You've used 12 entries,
             4087 wiz_defined-function locations,
-            854 strings with 8401 characters,
-and the built_in function-call counts, 3913 in all, are:
-= -- 319
-> -- 80
-< -- 33
-+ -- 43
-- -- 13
-* -- 237
-:= -- 622
-add.period$ -- 11
-call.type$ -- 5
-change.case$ -- 5
-chr.to.int$ -- 69
-cite$ -- 7
-duplicate$ -- 276
-empty$ -- 289
-format.name$ -- 18
-if$ -- 872
+            901 strings with 10491 characters,
+and the built_in function-call counts, 9396 in all, are:
+= -- 723
+> -- 254
+< -- 64
++ -- 133
+- -- 48
+* -- 566
+:= -- 1427
+add.period$ -- 28
+call.type$ -- 12
+change.case$ -- 16
+chr.to.int$ -- 147
+cite$ -- 16
+duplicate$ -- 671
+empty$ -- 738
+format.name$ -- 60
+if$ -- 2126
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 47
-newline$ -- 44
-num.names$ -- 5
-pop$ -- 99
+int.to.str$ -- 12
+missing$ -- 128
+newline$ -- 77
+num.names$ -- 13
+pop$ -- 319
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 281
+skip$ -- 655
 stack$ -- 0
-substring$ -- 167
-swap$ -- 238
-text.length$ -- 10
+substring$ -- 362
+swap$ -- 554
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 5
-warning$ -- 2
-while$ -- 18
-width$ -- 6
-write$ -- 79
-(There were 2 warnings)
+type$ -- 12
+warning$ -- 4
+while$ -- 38
+width$ -- 14
+write$ -- 156
+(There were 4 warnings)

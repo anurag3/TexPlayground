@@ -1,6 +1,10 @@
 \documentclass{article}
 
 \usepackage{comment}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+
 
 
 \title{HERE Technologies Research Proposal}
@@ -29,34 +33,48 @@
 	\cite{thrun_robust_2001}
 	or Kalman filter based localizations 
 	and navigate to the destination. Several approaches have been proposed 
-	\cite{thrun_graph_2006} 
 	\cite{durrant-whyte_simultaneous_nodate}
-	,
+	\cite{thrun_graph_2006},
 	however the most successful one
 	\cite{levinson_map-based_2007}
 	was developed by Stanford Artificial Intelligence Lab. 
 	
-	However, most of these researches have been focused on very specific type of environments and the challenge of mapping large-scale environments is still a work in progress.
+	Most of the related work conducted has been focused on very specific and constrained environments, however to achieve a fully autonomous system, the challenge of mapping large-scale environments needs to be tackled. The objective of this project is to develop a system that can not only generate a three dimensional large-scale map but also add more detailed information to the map data.
 	
-	
-	Talk about how large scale mapping is still untackled
-	
-	
-
 	\begin{comment}
 	Autonomous vehicles require more information that the standard 2D map provides. It needs to understand when and where to look for traffic signals, speed limits. Even to perform a simple task like taking a turn, the autonomous vehicle requires information like where the turn only lane starts which isn't provided in standard maps. Hence we need maps that have more data that simple latitude and longitudinal data.
 	Perception and navigation in complex environment requires a well defined map of the environment. LiDAR is usually used to generate a map of the environment using the 3D point cloud data. Camera's do not directly provide a depth perception but can be extremely efficient in image classification and obstacle detection.
-	\end{comment}
 	
 	\underline{\textit{How Self driving requires more data than just the data provided by GNSS}}
+	\end{comment}
 	
 	\section{Related Work}
-	\paragraph{}
-	Different Mapping Techniques have been deployed for generating
+
+	Different Mapping Techniques that have been deployed for generating map data can be broadly classified into 
+	LiDAR Mapping
+	\cite{levinson_robust_2010},
+	Visual Mapping
+	\cite{chen_combining_2017}
+	and Sensor Fusion based Mapping
+	\cite{silva_fusion_nodate}. 
+	LiDAR based mapping is usually preferred as it generates accurate point clouds data which provide a depth perception of the image. This depth information is extremely useful in navigation. Visual mapping is primarily based on camera data. Unlike LiDARs, Cameras require ambient lighting and cannot provide depth information by default. However, cameras provide better scene segmentation and understanding
+	\cite{heng_project_2018}.
+	We can also use multi camera system
+	\cite{geiger_stereoscan:_2011}
+	to gain depth perception along with different wide field of view lenses or fisheye lenses
+	\cite{cui_real-time_2018}
+	to gain more information.
+	The sensor fusion based approach tries to combine the data from all the sensors and generates a map that has a depth perception of LiDAR as well as better scene segmentation of Camera. Other sensors commonly used are RADAR for navigation and obstacle detection, IMU and GNSS for better localization.
+	The following table lists all the advantages and drawbacks of different sensors:
+
+	\begin{figure}
+		\includegraphics[width=\textwidth]{Sensor_Comparison}
+		\caption{Sensor Comparison
+		\cite{noauthor_self-driving_nodate}}
+	\end{figure}
+
 	
-	1. Visual Mapping - S Thrun Reference 
 	
-	2. Lidar Mapping - A Geiger Reference 
 	
 	Different ways the work load is offloaded:
 	
