@@ -5,10 +5,11 @@
 \graphicspath{ {./images/} }
 \usepackage{float}
 
+\renewcommand\thesection{\Roman{section}.}
 
 
 \title{HERE Technologies Research Proposal}
-\author{Reinhold Ludwig, Xinming Huang, Anurag Desai}
+
 
 \begin{document}
 	\pagenumbering{gobble}
@@ -16,13 +17,10 @@
 	\newpage
 	\pagenumbering{arabic}
 	
-	\begin{comment}	
 	\begin{abstract}
-		
-		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this paper we would like to propose an innovative system that would create a dense geometric mapping algorithm for identifying and mapping static digital markers like Traffic Signal Posts, Speed Limit Signs. Our system would also be able to classify static and dynamic obstacles, and remove dynamic obstacles from the map.
+		Mapping the surrounding environment is of utmost importance for path planning and obstacle avoidance of Autonomous Vehicles. In this report we would like to propose an innovative system that would create a dense 3D geometric map of complex urban environment with additional Geo-spatial information to reduce the computational complexity of Autonomous Driving. Our system would also be able to classify static and dynamic obstacles, identify and map static land marks and remove dynamic obstacles from the map.
 		
 	\end{abstract}
-	\end{comment}
 	
 	\section{Introduction}
 		\paragraph{}
@@ -54,7 +52,8 @@
 		LiDAR Mapping
 		\cite{levinson_robust_2010},
 		Visual Mapping
-		\cite{chen_combining_2017}
+		\cite{liu_towards_nodate}
+		\cite{Krombach_Droeschel_Behnke_2017}
 		and Sensor Fusion based Mapping
 		\cite{silva_fusion_nodate}. 
 		LiDAR based mapping is usually preferred as it generates accurate point clouds data which provide a depth perception of the image. This depth information is extremely useful in navigation. Visual mapping is primarily based on camera data. Unlike LiDARs, Cameras require ambient lighting and cannot provide depth information by default. However, cameras provide better scene segmentation and understanding
@@ -96,21 +95,25 @@
 				\item Adding more information to Existing Map Data
 			\end{itemize}
 	
-
-	
 			\begin{figure}[H]
 			\includegraphics[width=\textwidth]{HERE_Proposed_System}
 			\caption{Proposed System}
 			\end{figure}
-	
-	
-	Cite 9 remaining papers
+		
+		The proposed system would focus on classification of dynamic and static obstacles in the path using visual motion estimation. This approach tries to determine motion by performing an optimized frame-by-frame comparison
+		\cite{Krombach_Droeschel_Behnke_2017}.
+		We can further optimize this approach by validating it with a LiDAR based iterative closest point algorithm. We can use this identification of dynamic objects
+		\cite{kiran_real-time_2018}
+		to mask them in our mapping algorithm to further improve the quality of information in our map data.
+		
+		
 	\section{Conclusion}
-	\paragraph{}
-	The
+		\paragraph{}
+		We propose a novel system which develops a feedback loop with the system, thereby improving the quality of map data with every iteration. This increased information in map data would reduce the computational complexity of the already complex task of autonomous driving.
 	
 	
-	
-\bibliography{ResearchProposal}
+\newpage
 \bibliographystyle{IEEEtran}
+\bibliography{ResearchProposal}
+
 \end{document}

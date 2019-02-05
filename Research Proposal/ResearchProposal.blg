@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ResearchProposal.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ResearchProposal.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in durrant-whyte_simultaneous_nodate
+Warning--empty year in durrant-whyte_simultaneous_nodate
+Warning--empty journal in liu_towards_nodate
+Warning--empty year in liu_towards_nodate
+Warning--empty journal in silva_fusion_nodate
+Warning--empty year in silva_fusion_nodate
+Warning--empty booktitle in montemerlo_fastslam:_2002
+
+Done.
+You've used 18 entries,
+            4087 wiz_defined-function locations,
+            934 strings with 11978 characters,
+and the built_in function-call counts, 13297 in all, are:
+= -- 1011
+> -- 388
+< -- 75
++ -- 199
+- -- 78
+* -- 769
+:= -- 1999
+add.period$ -- 40
+call.type$ -- 18
+change.case$ -- 22
+chr.to.int$ -- 171
+cite$ -- 25
+duplicate$ -- 971
+empty$ -- 1074
+format.name$ -- 96
+if$ -- 3035
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 192
+newline$ -- 99
+num.names$ -- 19
+pop$ -- 497
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 949
+stack$ -- 0
+substring$ -- 446
+swap$ -- 774
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 18
+warning$ -- 7
+while$ -- 50
+width$ -- 20
+write$ -- 211
+(There were 7 warnings)
